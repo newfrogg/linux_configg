@@ -1,9 +1,0 @@
-alias vim="vim -O"
-alias vi="vim"
-alias v="vim"
-alias vm="v ~/.mycshrc"
-
-alias ll="ls -rhlt"
-alias l="ll"
-alias b="cd .."
-alias rl="readlink -f"
