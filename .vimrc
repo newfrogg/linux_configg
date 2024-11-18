@@ -6,6 +6,7 @@ set ignorecase smartcase
 ""set backspace=indent,eol,start
 set history=10000
 "set ruler
+syntax on
 set showcmd
 set incsearch
 set hlsearch
