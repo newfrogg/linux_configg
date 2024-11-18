@@ -47,6 +47,6 @@ set t_u7=
 set formatoptions=ql
 set formatoptions-=cro
 
-source ~/.vim/autoload/*.vim
+source ~/.vim/autoload/autoload.vim
 
 
