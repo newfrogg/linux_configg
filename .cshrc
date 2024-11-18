@@ -14,7 +14,12 @@ alias rl="readlink -f"
 
 function cd {
 	builtin cd $1
-	ll
+	if [ -f "README" ]; then
+		echo "[README]"
+		cat README
+	else 
+		ll
+	fi
 }
 
 
