@@ -12,7 +12,7 @@ alias vdf="vimdiff"
 alias grep='grep --color'
 alias lg='ll | grep'
 
-alias ll="ls -rhlta"
+alias ll="ls -la"
 alias l="ll"
 alias b="cd .."
 alias rl="readlink -f"

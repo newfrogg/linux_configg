@@ -21,6 +21,11 @@ set nowrap
 set ft=verilog
 set tabstop=4
 set t_u7=
+" Visual
+" https://stackoverflow.com/questions/3074068/how-to-change-the-color-of-the-selected-code-vim-scheme
+"highlight clear CursorLine to clear the current cusorline hl
+"highlight CursorLine gui=underline cterm=underline 
+highlight Visual cterm=bold ctermbg=Blue ctermfg=NONE
 " -------------------------------------------------------
 " Clever Tab 
 " -------------------------------------------------------
@@ -31,7 +36,6 @@ function! CleverTab()
    return "\<Tab>"
  endif
 endfunction
-
 " Turn off feature auto add comment character
 " https://vi.stackexchange.com/questions/1983/how-can-i-get-vim-to-stop-putting-comments-in-front-of-new-lines
 " -------------------------------------------------------
@@ -71,6 +75,7 @@ nmap ga <Plug>(EasyAlign)
  :au BufNewFile,BufRead   *.vimrc     set filetype=vim
  :au BufNewFile,BufRead   *.vifile    set filetype=vim
  :au BufNewFile,BufRead   *.in        set filetype=cpp
+ :au BufNewFile,BufRead   *.cpp       set filetype=cpp
  :au BufNewFile,BufRead   *.lib       set filetype=csh
  :au BufNewFile,BufRead   *.list      set filetype=csh
  :au BufNewFile,BufRead   *.cmd       set filetype=csh
